@@ -2,9 +2,12 @@ package com.example.demo.Controller;
 
 
 import com.example.demo.Module.Entity;
+import com.example.demo.Module.Entityresponse;
 import com.example.demo.Repository.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/inventory")
@@ -21,8 +24,8 @@ public class Controller {
     }
 
 
-    @GetMapping(value = "/instock/{code}")
-    public boolean isInStock(@PathVariable("code") String code){
+    @GetMapping(value = "/Stocks/{code}")
+    public Boolean isInStock(@PathVariable("code") String code){
         return repository.findBycode(code).isPresent();
     }
 

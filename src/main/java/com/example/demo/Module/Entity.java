@@ -21,7 +21,4 @@ public class Entity {
     int quantity;
 
 
-
-
-
 }
