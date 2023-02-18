@@ -1,12 +1,14 @@
 package com.example.demo.Module;
 
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
 import lombok.*;
 
-@jakarta.persistence.Entity(name = "inventory")
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@javax.persistence.Entity(name = "inventory")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
